@@ -74,7 +74,7 @@ pipeline {
                     post {
                         always {
                             dir("${env.DOCKER_BUILD_DIR}/test/shared-db-channel/") {
-                                junit 'api/tests/*.xml'
+                                junit 'tests/*.xml'
                             }
                         }
                     }
